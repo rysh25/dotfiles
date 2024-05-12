@@ -1,0 +1,23 @@
+# Attach to an already open session if one exists, otherwise create a new session
+# screen -xR
+
+defutf8 on
+defencoding utf8
+encoding utf8 utf8
+
+# Turn off start message:
+startup_message off
+
+# Change escape meta-key
+escape ^Tt
+
+# Bump up the size of the scrollback buffer
+defscrollback 10000
+
+# Get rid of screen 0
+bind c screen 1
+bind 0 select 10
+
+# Create initial window
+screen 1
+
